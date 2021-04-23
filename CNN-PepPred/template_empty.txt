@@ -1,0 +1,15 @@
+Input,Input_Value
+allele,
+savePath,
+doTraining,
+trainingDataPath,
+doLogoSeq,
+doCV,
+kFold,
+doApplyData,
+trainedModelsFile,
+applyDataPath,
+epitopesLength,
+parametersFile,
+saveClassObject,
+

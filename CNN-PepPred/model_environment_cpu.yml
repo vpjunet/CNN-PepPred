@@ -1,0 +1,17 @@
+name: CNNPepPred_Env_CPU
+channels:
+   - defaults
+   - menpo
+   - anaconda
+   - bioconda
+dependencies:
+   - python=3.6.10
+   - tensorflow=2.0.0
+   - keras=2.3.1
+   - pandas=1.1.3
+   - pathlib
+   - biopython=1.78
+   - logomaker
+   - scikit-learn=0.23.2
+   - seaborn=0.11.0
+   - pillow=8.0.0

@@ -1,0 +1,15 @@
+Input,Input_Value
+allele,HLA_DRB1_08_01
+savePath,[your_working_path]/Test
+doTraining,0
+trainingDataPath,
+doLogoSeq,0
+doCV,0
+kFold,
+doApplyData,1
+trainedModelsFile,
+applyDataPath,[your_working_path]/Test/test_seq.fasta
+epitopesLength,15
+parametersFile,parameters.txt
+saveClassObject,0
+

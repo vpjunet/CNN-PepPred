@@ -1,0 +1,15 @@
+Input,Input_Value
+allele,HLA_DRB1_08_01
+savePath,[your_working_path]/Example/Template2_results
+doTraining,1
+trainingDataPath,[your_working_path]/Example/data_HLA_DRB1_08_01.txt
+doLogoSeq,0
+doCV,0
+kFold,
+doApplyData,0
+trainedModelsFile,
+applyDataPath,
+epitopesLength,15
+parametersFile,parameters.txt
+saveClassObject,0
+
