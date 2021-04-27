@@ -21,7 +21,10 @@ class CNNPepPred:
     def __init__(self,allele='no_allele_name',savePath=Path(os.getcwd()),doTraining=False,trainingData=None,trainingOutcome=None,doLogoSeq=False,doCV=False,cvPart=None,kFold=5,doApplyData=False,trainedModelsFile=None,applyData=None,applyDataName=None,epitopesLength=15,parametersFile='parameters.txt'):
         self.__version__ = '0.0.1'
         self.allele = allele.translate ({ord(c): "_" for c in "!@#$%^&*()[]{};:,./<>?\|`~-= +"})
-        self.savePath = Path(savePath) / (allele+datetime.now().strftime("_%m#%d#%Y#%H#%M#%S"))
+        savePath = Path(savePath)
+        if not os.path.isdir(savePath):
+            os.mkdir(savePath)
+        self.savePath = savePath / (allele+datetime.now().strftime("_%m#%d#%Y#%H#%M#%S"))
         os.mkdir(self.savePath)
         self.doTraining = doTraining
         self.epitopesLength = epitopesLength
