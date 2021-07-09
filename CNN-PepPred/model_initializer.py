@@ -818,6 +818,8 @@ class CNNPepPred:
         cvPart = np.random.permutation(cvPart)
         
         lmerInter = countSharedlmers(cvPart,sLmer,indLmer,indPosLmer)[1]
+        if len(lmerInter)>0:
+            s = self.int2aa(self.aa2int(s))
         for ss in lmerInter:
             indWithLmer = [sc.find(ss)>-1 for sc in s]
             currCount = np.bincount(cvPart[indWithLmer].reshape((-1,)))
